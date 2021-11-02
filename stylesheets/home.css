@@ -265,7 +265,7 @@ a:hover{
     }
 
     .fab{
-        transform: scale(1.5);
+        transform: scale(1);
         padding: 0rem 0.8rem;
     }
 
@@ -274,10 +274,14 @@ a:hover{
         padding: 0rem .3rem;
     }
 
+    .developer-contact{
+        font-size: 30px;
+    }
+
     #availableContent{
-    margin: 100px 10% 0;
-    padding: 10px 0px 10px;
-    font-size: 25px;
+        margin: 100px 10% 0;
+        padding: 10px 0px 10px;
+        font-size: 25px;
 }
 
 }
