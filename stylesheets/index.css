@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    transition: all 0.4s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url('https://free4kwallpapers.com/uploads/originals/2020/03/30/cyan-and-ruby-red-tunnels-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(20px);
+    margin: 0;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: rgb(37, 198, 194, 43%);
+    position: sticky;
+    top: 0%;
+    z-index: 50;
+    transition: all 0.3s ease-in;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+}
+
+#access-btn{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#access-btn:hover{
+    cursor: pointer;
+    margin-bottom: 50px;
+    background-color: rgb(0, 220, 200, 30%);
+    /* box-shadow: 0px 6px 7px rgb(220, 27, 38, 65%); */
+    box-shadow: 0px 6px 7px #00000078;
+}
+
+form{
+    display: none;
+    /* display: flex; */
+    margin-bottom: 40px;
+}
+
+
+
+input{
+    margin-right: 10px;
+    text-align: center;
+    width: 200px;
+    height: 43px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00000078;
+    color: aliceblue;
+    font-size: 19px;
+}
+
+input:hover{
+    /* background-color: transparent; */
+    box-shadow: 0px 1px 5px black;
+}
+
+input::placeholder{
+    color: aliceblue;
+    font-size: 15px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#pin-btn{
+    width: 60px;
+    height: 43px;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #00000078;
+}
+
+#pin-btn:hover{
+    cursor: pointer;
+    background-color: #09091aa8;
+    box-shadow: 0px 1px 5px black;
+}
+
+.try{
+    display: none;
+    /* display: block; */
+    color: #e7ebeb;
+    position: absolute;
+    left: 45%;
+    bottom: 40.5%;
+    background-color: #3638388f;
+    padding: 2px 8px 2px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+
+
+.granted{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #00000078;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+#welcome{
+    color: #000000;
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.loader {
+    margin: 10px;
+    padding: 10px;
+    border: 8px solid #a1b1b1; /* Light grey */
+    border-top: 8px solid #09091aa8; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+.not-granted{
+    display: none;
+    font-size: 30px;
+    background-color: rgba(255, 0, 0, 0.582);
+}

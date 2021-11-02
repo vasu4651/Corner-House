@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner House</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+<body>
+    <header>
+        <nav class="nav"></nav>
+            <h1>Corner House</h1>
+    </header>
+
+    <main>
+        <button id="access-btn">Want In?</button>
+        <form id="form" method="get" action="#">
+            <input id="pin" type="password" class="search" name="queryString" placeholder="PIN">
+            <button id="pin-btn" type="button"><i class="fas fa-key"></i></i></button>
+        </form>
+
+        <div class="try">Try Again</div>
+        
+        <div class="granted">
+            <h2 id="welcome">Welcome !!!</h2>
+            <div class="loader"></div>
+        </div>
+
+        <div class="not-granted">
+            You wont be allowed to enter beeaatchh
+        </div>
+
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/3a105db922.js" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
